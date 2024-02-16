@@ -1,0 +1,35 @@
+---
+title: "test"
+format: html
+editor: source
+params:
+  testvar: true
+  testvar2: true
+theme: darkly
+---
+
+
+
+
+The student wanted to know if the forest treatments would have any effect on the sound attenuation of the endangered [Mount Graham Red Squirrel](https://en.wikipedia.org/wiki/Mount_Graham_red_squirrel). 
+
+![Mount Graham Red Squirrel](https://upload.wikimedia.org/wikipedia/commons/3/38/Mt._Graham_Red_Squirrel.jpg){#fig-mgrsqrl}
+
+
+```{r}
+#| label: test chunk
+#| eval: !expr params$testvar
+#| include: true
+#| echo: true
+
+
+5+5
+params$testvar
+
+```
+
+
+```{r}
+params$testvar2
+```
+
